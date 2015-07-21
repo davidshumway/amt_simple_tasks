@@ -91,7 +91,7 @@ $np = 20;
 $last__ = '';
 
 //
-$runs = 800;
+$runs = 720;
 
 //
 $countrn = 0;
@@ -300,7 +300,7 @@ while ($countrn < $runs) {
     scraperwiki::sqlitecommit();
         
     // wait some to finish SQL above. Wait xx1 minutexx 2 minutes.
-    sleep(100);
+    sleep(60);
         
     // delete old
     // only when completed pages is max (all complete)
@@ -328,7 +328,7 @@ while ($countrn < $runs) {
     //echo time()."\r\n";
     
     // sleep 1 more minute
-    sleep(20);
+    sleep(60);
 }
 
 //https://scraperwiki.com/scrapers/toronto_-_call_docs_-_purchasers
