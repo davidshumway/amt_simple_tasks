@@ -24,29 +24,31 @@ require 'scraperwiki.php';
 
 
 // default SQLite table
-scraperwiki::sqliteexecute(
-    "CREATE TABLE IF NOT EXISTS jobs (
-        id INTEGER PRIMARY KEY ASC,
-        title string,
-        requester_id string,
-        requester_name string,
-        HITs_available int,
-        time_posted int,
-        time_last_update int,
-        job_exists int,
-        id_duplicate_jobs int NOT NULL DEFAULT 0,
-        on_page_number int
-    )"
-);
+//scraperwiki::save_sqlite(array("name"), array("name" => "susan", "occupation" => "software developer");
+//ScraperWiki.save_sqlite([:name], {name: "susan", occupation: "software developer"})
+//scraperwiki::sqliteexecute(
+//    "CREATE TABLE IF NOT EXISTS jobs (
+//        id INTEGER PRIMARY KEY ASC,
+//        title string,
+//        requester_id string,
+//        requester_name string,
+//        HITs_available int,
+//        time_posted int,
+//        time_last_update int,
+//        job_exists int,
+//        id_duplicate_jobs int NOT NULL DEFAULT 0,
+//        on_page_number int
+//    )"
+//);
 
 // last updates (by time())
-scraperwiki::sqliteexecute(
-    "CREATE TABLE IF NOT EXISTS last_update (
-        id INTEGER PRIMARY KEY ASC,
-        HITs_available int,
-        jobs int
-    )"
-);
+//scraperwiki::sqliteexecute(
+//    "CREATE TABLE IF NOT EXISTS last_update (
+//        id INTEGER PRIMARY KEY ASC,
+//        HITs_available int,
+//        jobs int
+//    )"
+//);
 
 //echo scraperwiki::busyTimeout(120000); exit;
 
@@ -72,7 +74,7 @@ scraperwiki::sqliteexecute(
 //);
 
 // execute
-scraperwiki::sqlitecommit();// exit;
+//scraperwiki::sqlitecommit();// exit;
     
 // Example URLs to load (pages 2, 3)
 //searchWords=&selectedSearchType=hitgroups&sortType=NumHITs%3A1&pageNumber=2&searchSpec=HITGroupSearch%23T%231%2310%23-1%23T%23%21%23%21NumHITs%211%21%23%21
