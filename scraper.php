@@ -17,7 +17,7 @@ require 'scraperwiki.php';
 // e.g. scraperwiki::sqliteexecute("insert into swdata values (?,?,?)", array(16, "John Doe", "M"))
 var_dump(scraperwiki);
 //var_dump(scraperwiki::);
-var_dump(scraperwiki::sqliteexecute);
+var_dump(scraperwiki::sqliteexecute);exit;
 
 // max execution time 60 seconds
 //set_time_limit(60);
