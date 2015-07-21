@@ -85,7 +85,7 @@ $url_string = 'https://www.mturk.com/mturk/viewhits?searchWords=&selectedSearchT
 //$database_ids_array = new Array();
 
 // number pages to scrape (depth)
-$np = 14;
+$np = 20;
 
 // debug
 $last__ = '';
