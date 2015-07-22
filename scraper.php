@@ -18,7 +18,7 @@ require 'scraperwiki.php';
 //var_dump(scraperwiki);
 //var_dump(scraperwiki::);
 //var_dump(scraperwiki::sqliteexecute);
-scraperwiki::save_sqlite(array("name"), array("name" => "susan", "occupation" => "software developer"));
+scraperwiki::save_sqlite(array("name"), array("name" => "susan", "occupation" => "software developer"),'tasks');
 echo scraperwiki::save_sqlite(array("reqname", "title"), array(array('Hi ', "Hi "),array('there','is')), 'tasks');
 //scraperwiki::save_sqlite(["reqname__tasktitle"], data={"reqname__tasktitle"=>'yy', "reqname"=>"Hi there"});
 //scraperwiki::save_sqlite(["reqname__tasktitle"], data={"reqname__tasktitle"=>'zz', "reqname"=>"Oh"});
