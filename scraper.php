@@ -15,9 +15,14 @@ require 'scraperwiki.php';
 /*/
 
 // e.g. scraperwiki::sqliteexecute("insert into swdata values (?,?,?)", array(16, "John Doe", "M"))
-var_dump(scraperwiki);
+//var_dump(scraperwiki);
 //var_dump(scraperwiki::);
-var_dump(scraperwiki::sqliteexecute);exit;
+//var_dump(scraperwiki::sqliteexecute);
+scraperwiki::save_sqlite(unique_keys=["reqname__tasktitle"], data={"reqname__tasktitle"=>'xx', "reqname"=>"Hi there"});
+scraperwiki::save_sqlite(unique_keys=["reqname__tasktitle"], data={"reqname__tasktitle"=>'yy', "reqname"=>"Hi there"});
+scraperwiki::save_sqlite(unique_keys=["reqname__tasktitle"], data={"reqname__tasktitle"=>'zz', "reqname"=>"Oh"});
+
+exit;
 
 // max execution time 60 seconds
 //set_time_limit(60);
