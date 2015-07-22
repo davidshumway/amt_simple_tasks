@@ -1,5 +1,5 @@
 <?php
-require 'scraperwiki.php';
+#require 'scraperwiki.php';
 /*/
  *
  * Copyright 2013 David Shumway
