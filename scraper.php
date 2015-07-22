@@ -18,7 +18,7 @@ require 'scraperwiki.php';
 //var_dump(scraperwiki);
 //var_dump(scraperwiki::);
 //var_dump(scraperwiki::sqliteexecute);
-scraperwiki::save_sqlite(["reqname_tasktitle"], ["reqname_tasktitle"=>'Hi ', "reqname"=>"Hi there"], 'tasks');
+scraperwiki::save_sqlite(["reqname_tasktitle", "reqname"], [['Hi ', "Hi "],['there','is']], 'tasks');
 //scraperwiki::save_sqlite(["reqname__tasktitle"], data={"reqname__tasktitle"=>'yy', "reqname"=>"Hi there"});
 //scraperwiki::save_sqlite(["reqname__tasktitle"], data={"reqname__tasktitle"=>'zz', "reqname"=>"Oh"});
 
